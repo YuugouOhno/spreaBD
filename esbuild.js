@@ -7,6 +7,8 @@ esbuild
     bundle: true,
     minify: true,
     outfile: "./dist/main.js",
+    format:"esm",
+    platform: "node",
     plugins: [GasPlugin],
   })
   .catch((e) => {

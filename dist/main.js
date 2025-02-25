@@ -1,4 +1,4 @@
 let global = this;
-function getData() {
+function initializeSheet() {
 }
-"use strict";(()=>{function o(){console.log("test")}global.getData=o;})();
+var m={sheets:[{name:"3-1-1",columns:[{name:"datetime",type:"datetime",threshold:null},{name:"\u5869\u5206\u6FC3\u5EA6",type:"number",threshold:{min:5,max:35}},{name:"DO",type:"number",threshold:{target:8,tolerance:10}},{name:"\u6C34\u6E29",type:"number",threshold:{min:0,max:40}},{name:"\u5916\u6C17\u6E29",type:"number",threshold:{target:20,tolerance:5}}]},{name:"3-1-2",columns:[{name:"datetime",type:"datetime",threshold:null},{name:"\u5869\u5206\u6FC3\u5EA6",type:"number",threshold:{min:5,max:35}},{name:"DO",type:"number",threshold:{target:8,tolerance:10}},{name:"\u6C34\u6E29",type:"number",threshold:{min:0,max:40}},{name:"\u5916\u6C17\u6E29",type:"number",threshold:{target:20,tolerance:5}}]}]};function r(){let n=SpreadsheetApp.openById("1ikEvU2I88BuvYGxegNe8dLsQlcU-POjN7vlIUK4Bf7o");m.sheets.forEach(t=>{let e=n.getSheetByName(t.name);e||(e=n.insertSheet(t.name)),e.clear();let a=t.columns.map(l=>l.name);e.getRange(1,1,1,a.length).setValues([a])}),Logger.log("\u30B7\u30FC\u30C8\u306E\u4F5C\u6210\u30FB\u66F4\u65B0\u304C\u5B8C\u4E86\u3057\u307E\u3057\u305F\u3002")}global.initializeSheet=r;

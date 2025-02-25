@@ -3,6 +3,8 @@
     "lib": ["esnext"],
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   }
 }

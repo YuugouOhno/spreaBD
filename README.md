@@ -1,0 +1,2 @@
+.clasp.jsonのscriptIdがデプロイ先のスクリプト
+mainでglobalオブジェクトに渡された関数がデプロイされる

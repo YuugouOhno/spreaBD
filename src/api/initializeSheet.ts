@@ -1,5 +1,5 @@
-import config from "./config.json";
-import {spreadsheetId} from "./setting"
+import config from "../config/config.json";
+import {spreadsheetId} from "../config/setting"
 
 export function initializeSheet() {
   const ss = SpreadsheetApp.openById(spreadsheetId);

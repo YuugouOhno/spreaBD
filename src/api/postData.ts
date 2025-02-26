@@ -1,5 +1,5 @@
-import {getSheetByName} from "./utils"
-import {spreadsheetId} from "./setting"
+import {getSheetByName} from "../utils"
+import {spreadsheetId} from "../config/setting"
 
 export function postData(requestBody: string): object {
   try {

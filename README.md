@@ -29,3 +29,6 @@ config.jsonを元にスプレッドシートを初期化
         "key2": "value2"
     }
 }
+
+### getRecentData(n)
+すべてのシートから最新 n 件のデータを取得し、それらを updated_at の降順でソートして最も新しい n 件を取得する

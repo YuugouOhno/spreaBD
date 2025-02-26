@@ -1,11 +1,7 @@
-// import * as dotenv from 'dotenv';
 import config from "./config.json";
-
-// dotenv.config();
+import {spreadsheetId} from "./setting"
 
 export function initializeSheet() {
-  const spreadsheetId = "1ikEvU2I88BuvYGxegNe8dLsQlcU-POjN7vlIUK4Bf7o"
-  // const spreadsheetId: string = process.env.SPREAD_SHEET_ID ?? '';
   const ss = SpreadsheetApp.openById(spreadsheetId);
 
   config.sheets.forEach(sheetConfig => {

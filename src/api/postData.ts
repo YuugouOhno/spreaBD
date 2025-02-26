@@ -54,8 +54,8 @@ export function testPostData() {
     const testRequest = JSON.stringify({
       "sheetName": "3-1-1",
       "data": {
-        "datetime": "2024-02-25 12:00:00",
-        "塩分濃度": "",
+        "datetime": "2024-02-25 11:00:00",
+        "塩分濃度": "2024-02-25 11:00:00",
         "DO": 8.4,
         "水温": 2,
         "外気温":2,
